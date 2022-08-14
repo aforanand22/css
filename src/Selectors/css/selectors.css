@@ -1,0 +1,75 @@
+/* Universal selector */
+
+* {
+    text-align: center
+}
+
+/* type selector */
+span {
+    color: orange;
+}
+
+/* class selector */
+.classSelector {
+    color: green;
+}
+
+/* id selector  */
+
+#idselector {
+    border: 1px solid blue
+}
+
+/* attribute selectors  */
+
+[data-type="primary"] {
+    color: red
+}
+
+[data-type] {
+    background-color: blue;
+}
+
+p[data-type*="primary"] {
+    border: 5px solid red
+}
+
+/* Pseudo classes  */
+p:hover {
+    outline: 3px dotted green;
+}
+
+/* Complex selectors # */
+
+/* Combinators # */
+
+p strong {
+    color: blue;
+}
+
+.top div {
+    padding-left: 2em;
+}
+
+.top p {
+    background: white;
+    padding: 0.5em;
+}
+
+.top div {
+    background: white;
+    border-top: 1px solid blue;
+    
+  }
+
+  .top > div {
+    border-bottom: 1px solid blue;
+    border-right: 1px solid blue;
+    border-left: 1px solid blue;
+  }
+
+  .top p {
+    margin: 0px;
+    text-align: left;
+    border-left: 1px solid blue;
+  }
